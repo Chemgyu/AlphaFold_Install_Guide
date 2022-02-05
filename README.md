@@ -36,7 +36,6 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 ## 1. Google Colab AlphaFold2
 Main Reference: [Official AlphaFold Colab](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb) <br>
 Follow instructions inside the colab page.
-Main reference: [Official AlphaFold Colab](https://www.notion.so/AlphaFold2-Setup-Guide-1fc268d4deaf4108b9aa368f2f6dc585)
 
 - (optional) Extracting single/pair representations
     - Modify `GIT_REPO` URL
