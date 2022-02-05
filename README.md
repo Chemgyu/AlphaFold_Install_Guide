@@ -12,8 +12,8 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 > Please feel free to contact me if you faced an error or if you have any suggestions.
 
 
-### 0. Overview / References
-1. Main References
+## 0. Overview / References
+### 1. Main References
     1) Atricle <br>
         Jumper2021, the original alphafold2 paper [Link](https://www.nature.com/articles/s41586-021-03819-2.pdf) <br>
         Zhong2021, for msa / alphafold separation [Link](https://arxiv.org/pdf/2111.06340.pdf) <br>
