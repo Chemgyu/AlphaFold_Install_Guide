@@ -14,16 +14,16 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 
 ### 0. Overview / References
 1. Main References
-    1) Atricle
-        Jumper2021, the original alphafold2 paper [Link](https://www.nature.com/articles/s41586-021-03819-2.pdf)
-        Zhong2021, for msa / alphafold separation [Link](https://arxiv.org/pdf/2111.06340.pdf)
-    2) Github
-        AlphaFold official [Link](https://github.com/deepmind/alphafold)
-        Non-docker setup [Link](https://github.com/kalininalab/alphafold_non_docker)
-        msa/alphafold separation [Link1](https://github.com/Zuricho/ParallelFold) [Link2](https://github.com/SJTU-HPC/ParaFold)
-    3) AWS Related
-        Amazon blog [Link](https://aws.amazon.com/ko/blogs/machine-learning/run-alphafold-v2-0-on-amazon-ec2/)
-        Medium article [Link](https://medium.com/proteinqure/alphafold-quickstart-on-aws-9ba20692c98e)
+    1) Atricle <br>
+        Jumper2021, the original alphafold2 paper [Link](https://www.nature.com/articles/s41586-021-03819-2.pdf) <br>
+        Zhong2021, for msa / alphafold separation [Link](https://arxiv.org/pdf/2111.06340.pdf) <br>
+    2) Github <br>
+        AlphaFold official [Link](https://github.com/deepmind/alphafold) <br>
+        Non-docker setup [Link](https://github.com/kalininalab/alphafold_non_docker) <br>
+        msa/alphafold separation [Link1](https://github.com/Zuricho/ParallelFold) [Link2](https://github.com/SJTU-HPC/ParaFold) <br>
+    3) AWS Related <br>
+        Amazon blog [Link](https://aws.amazon.com/ko/blogs/machine-learning/run-alphafold-v2-0-on-amazon-ec2/) <br>
+        Medium article [Link](https://medium.com/proteinqure/alphafold-quickstart-on-aws-9ba20692c98e) <br>
     4) Google Colab
 2. Non-Docker Setup
 3. CPU/GPU Separation
