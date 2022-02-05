@@ -40,3 +40,36 @@ Follow instructions inside the colab page.
     - Fork AlphaFold github repository to your github repository
     - Edit `module.py` for returning representations
         
+- Modify `GIT_REPO` URL
+    - Fork AlphaFold to your github repository
+    - Edit `module.py` for returning representations
+        
+        `alphafold/model/modules.py` line 270
+        
+        ```bash
+        class AlphaFold(hk.Module):
+        
+          def __init__(self, config, name='alphafold'):
+            super().__init__(name=name)
+            self.config = config
+            self.global_config = config.global_config
+        
+          def __call__(
+              self,
+              batch,
+              is_training,
+              compute_loss=False,
+              ensemble_representations=False,
+              return_representations=True):
+        			# it was return_representations=False 
+        ```
+        
+- Modify Colab Code.
+    
+    ```python
+    # **Before**
+    GIT_REPO = 'https://github.com/deepmind/alphafold'
+    
+    # **After** (Example, insert your github repository URL.)
+    GIT_REPO = 'https://github.com/Chemgyu/alphafold'
+    ```
