@@ -359,3 +359,57 @@ Use `ParallelFold/run_alphafold.sh`
     ⇒ At error case, you should re-run the whole msa now.
     
     </aside>
+
+---
+
+## 6. Run GPU part (evoformer + structure module)
+
+Main reference: [ParaFold github](https://www.notion.so/AlphaFold2-Setup-Guide-1fc268d4deaf4108b9aa368f2f6dc585).
+
+Note: Also can be executed on CPU environment
+
+- (optional) Edit `module.py` for extracting representations
+    
+    `/data/ParallelFold/alphafold/model/modules.py` line 270
+    
+    ```bash
+    class AlphaFold(hk.Module):
+    
+      def __init__(self, config, name='alphafold'):
+        super().__init__(name=name)
+        self.config = config
+        self.global_config = config.global_config
+    
+      def __call__(
+          self,
+          batch,
+          is_training,
+          compute_loss=False,
+          ensemble_representations=False,
+          return_representations=True):
+    			# it was return_representations=False 
+    ```
+    
+- Run structure prediction
+    
+    ```bash
+    nohup ./run_alphafold.sh -d /data/project/MinGyu/af_download_data -o /data/project/MinGyu/output/alphafold -p monomer_ptm -i /data/project/MinGyu/input/alphafold/test.fasta -t 2021-07-27 -m model_1 &
+    ```
+    
+- Sample Results
+    
+    ```bash
+    test
+    ├── features.pkl
+    ├── msas
+    │   ├── bfd_uniclust_hits.a3m
+    │   ├── mgnify_hits.sto
+    │   ├── pdb_hits.hhr
+    │   └── uniref90_hits.sto
+    ├── result_model_1.pkl         #< result after structure prediction
+    └── unrelaxed_model_1.pdb      #< result after structure prediction
+    ```
+    
+- (optional) Tips for extracting representations
+    
+    You can access MSA, single repr., pair repr., and other useful vector data by using `pickle` package and `result_model_1.pkl`.
