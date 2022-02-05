@@ -24,13 +24,13 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
     3) AWS Related <br>
         Amazon blog [Link](https://aws.amazon.com/ko/blogs/machine-learning/run-alphafold-v2-0-on-amazon-ec2/) <br>
         Medium article [Link](https://medium.com/proteinqure/alphafold-quickstart-on-aws-9ba20692c98e) <br>
-    4) Google Colab
-        AlphaFold official [Link](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb)
-        ColabFold (Steinegger M. et al.) [Link](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb)
-2. Non-Docker Setup
+    4) Google Colab <br>
+        AlphaFold official [Link](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb) <br>
+        ColabFold (Steinegger M. et al.) [Link](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb) <br><br>
+2. Non-Docker Setup <br>
+        Non-docker setup [Link](https://github.com/kalininalab/alphafold_non_docker) <br>
 3. CPU/GPU Separation
-4. File Structure
-
+        ParallelFold [Link1](https://github.com/Zuricho/ParallelFold) [Link2](https://github.com/SJTU-HPC/ParaFold) <br>
 
 ### 1. Google Colab AlphaFold2
 Main Reference: [Official AlphaFold Colab](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb)
