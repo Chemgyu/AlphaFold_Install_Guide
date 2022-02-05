@@ -30,5 +30,11 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 ### 2. Non-Docker Setup [Link](https://github.com/kalininalab/alphafold_non_docker) <br><br>
 ### 3. CPU/GPU Separation [Link1](https://github.com/Zuricho/ParallelFold) [Link2](https://github.com/SJTU-HPC/ParaFold) <br>
 
-### 1. Google Colab AlphaFold2
-Main Reference: [Official AlphaFold Colab](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb)
+## 1. Google Colab AlphaFold2
+Main Reference: [Official AlphaFold Colab](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb) <br>
+Follow instructions inside the colab page.
+1. (optional) extracting single/pair representations
+1) Modify ***GIT_REPO*** URL
+    - Fork AlphaFold github repository to your github repository
+    - Edit ***module.py*** for returning representations
+        
