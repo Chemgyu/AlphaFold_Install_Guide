@@ -13,3 +13,15 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 
 
 ### 0. Overview / References
+1. Main References
+  1) Atricle
+  2) Github
+  3) AWS Related
+  4) Google Colab
+2. Non-Docker Setup
+3. CPU/GPU Separation
+4. File Structure
+
+
+### 1. Google Colab AlphaFold2
+Main Reference: [Official AlphaFold Colab](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb)
