@@ -72,3 +72,40 @@ Main reference: [Official AlphaFold Colab](https://www.notion.so/AlphaFold2-Setu
         # **After** (Example, insert your github repository URL.)
         GIT_REPO = 'https://github.com/Chemgyu/alphafold'
         ```
+---
+
+## 2. AWS Server Setup
+
+Main reference: [AWS blog](https://www.notion.so/AlphaFold2-Setup-Guide-1fc268d4deaf4108b9aa368f2f6dc585)
+
+- AWS EC2 Instance setup
+    - AWS EC2 console → choose AWS region (top right, Asia - Seoul)
+    - Choose new EC2 instance → Search Deep Learning AMI → Latest Ubuntu server
+        
+        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e2e05d35-2b62-4c46-af94-e17f2d65ed1b/Untitled.png)
+        
+    - Select the c6i.large instance
+        
+        <aside>
+        💡 Note: 
+        downloading alphafold database requires > 10 hr running time
+        ⇒ use the cheapest instance type for downloading.
+        (I used `c6i.large` instance)
+        
+        </aside>
+        
+    - Storage volume setting
+        
+        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/844834ec-505d-43d9-a12c-8fa53e372fe8/Untitled.png)
+        
+    - Allow ssh and download .pem key for convenient access
+- Disk setup
+    - Update pre-installed packages
+        
+        ```bash
+        sudo apt update
+        ```
+        
+    - Disk status check
+        
+        [Make an Amazon EBS volume available for use on Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html)
