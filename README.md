@@ -35,37 +35,39 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 ## 1. Google Colab AlphaFold2
 Main Reference: [Official AlphaFold Colab](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb) <br>
 Follow instructions inside the colab page.
-1. (optional) extracting single/pair representations      
-- Modify `GIT_REPO` URL
-    - Fork AlphaFold to your github repository
-    - Edit `module.py` for returning representations
+Main reference: [Official AlphaFold Colab](https://www.notion.so/AlphaFold2-Setup-Guide-1fc268d4deaf4108b9aa368f2f6dc585)
+
+- (optional) Extracting single/pair representations
+    - Modify `GIT_REPO` URL
+        - Fork AlphaFold to your github repository
+        - Edit `module.py` for returning representations
+            
+            `alphafold/model/modules.py` line 270
+            
+            ```bash
+            class AlphaFold(hk.Module):
+            
+              def __init__(self, config, name='alphafold'):
+                super().__init__(name=name)
+                self.config = config
+                self.global_config = config.global_config
+            
+              def __call__(
+                  self,
+                  batch,
+                  is_training,
+                  compute_loss=False,
+                  ensemble_representations=False,
+                  return_representations=True):
+            			# it was return_representations=False 
+            ```
+            
+    - Modify Colab Code.
         
-        `alphafold/model/modules.py` line 270
+        ```python
+        # **Before**
+        GIT_REPO = 'https://github.com/deepmind/alphafold'
         
-        ```bash
-        class AlphaFold(hk.Module):
-        
-          def __init__(self, config, name='alphafold'):
-            super().__init__(name=name)
-            self.config = config
-            self.global_config = config.global_config
-        
-          def __call__(
-              self,
-              batch,
-              is_training,
-              compute_loss=False,
-              ensemble_representations=False,
-              return_representations=True):
-        			# it was return_representations=False 
+        # **After** (Example, insert your github repository URL.)
+        GIT_REPO = 'https://github.com/Chemgyu/alphafold'
         ```
-        
-- Modify Colab Code.
-    
-    ```python
-    # **Before**
-    GIT_REPO = 'https://github.com/deepmind/alphafold'
-    
-    # **After** (Example, insert your github repository URL.)
-    GIT_REPO = 'https://github.com/Chemgyu/alphafold'
-    ```
