@@ -8,10 +8,10 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 > This repository deals with three methods for using AlphaFold2 in both ***local environment*** and ***cloud-computing environment*** (`Amazon cloud` and `Google colab`).
 
 > You can easily build your protein structure prediction environment by reproducing following instructions in this page.
-> You can also see this page using `notion` application [NOTION_LINK](https://helpful-longan-258.notion.site/AlphaFold2-Setup-Guide-1fc268d4deaf4108b9aa368f2f6dc585)
 
 > Please feel free to contact me if you faced an error or if you have any suggestions.
 
+(update Feb5) You can also use this page using `notion` application [NOTION_LINK](https://helpful-longan-258.notion.site/AlphaFold2-Setup-Guide-1fc268d4deaf4108b9aa368f2f6dc585)
 
 
 ## 0. Overview / References
