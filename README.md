@@ -14,10 +14,10 @@ Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 
 ### 0. Overview / References
 1. Main References
-  1) Atricle
-  2) Github
-  3) AWS Related
-  4) Google Colab
+1) Atricle
+2) Github
+3) AWS Related
+4) Google Colab
 2. Non-Docker Setup
 3. CPU/GPU Separation
 4. File Structure
