@@ -1,7 +1,7 @@
 # AlphaFold_Install_Guide
 Hands-on installation guide of AlphaFold for non-CS consumers
 
-> Created by: **MinGyu Choi**
+> Created by: **MinGyu Choi** <bf>
 Last modified: Jan14 2022
 Contact: chemgyu98@snu.ac.kr | aigengyu@gmail.com
 > 
